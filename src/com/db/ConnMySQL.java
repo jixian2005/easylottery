@@ -7,9 +7,9 @@ public class ConnMySQL {
 
     private final String dbDriver = "com.mysql.jdbc.Driver";// 设置连接MySQL数据库的驱动
     // 连接MySQL数据库的路径(注意：这里的数据库db_lottery.sql必须已经被导入MYSQL了）
-    private static final String URL = "jdbc:mysql://localhost:3306/db_lottery";
-    private static final String USERNAME = "root";// 设置连接MySQL数据库的用户名
-    private static final String PASSWORD = "jixian0721";// 设置连接MySQL数据库的密码
+    private static final String URL = "jdbc:mysql://localhost:3306/db_lottery"; // 确保这串地址没有问题（如果安装MySQL没修改默认设置一般不需要修改此行）
+    private static final String USERNAME = "你的MySQL账户名（默认 root）";// 设置连接MySQL数据库的用户名
+    private static final String PASSWORD = "你的MySQL密码";// 设置连接MySQL数据库的密码
     private static Connection con = null;// 设置初始化连接MySQL数据库的对象
     public ConnMySQL() {// 连接MySQL数据库的构造方法
         try {
